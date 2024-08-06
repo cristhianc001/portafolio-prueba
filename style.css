@@ -10,18 +10,32 @@
 body {
     background-color: black;
     color: white;
-    height: 100vh; /* el body ocupa el 100% de la pagina, se ve en el inspect element */
+    /* height: 100vh;  el body ocupa el 100% de la pagina, se ve en el inspect element */
     box-sizing: border-box;
 }
 
-.titulo-destacado{
+.header {
+    padding: 2% 0% 0% 7%;
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
     color: #22D4FD;
+    text-decoration: none;
+
 }
 
 .presentacion {
     display: flex;  /* organiza los elementos */
     align-items: center;
-    margin: 10% 7%; /* margenes del contenido */
+    padding: 6% 7%; /* margin: margenes del contenido */
     justify-content: space-between; /* espacio entre elementos */
 }
 
@@ -35,6 +49,10 @@ body {
 .presentacion__contenido__titulo {
     font-size: 36px;
     font-family: "Krona One", sans-serif;
+}
+
+.titulo-destacado{
+    color: #22D4FD;
 }
 
 .presentacion__contenido__texto {
@@ -73,5 +91,21 @@ body {
     display: flex;  /* organiza el texto junto con los iconos */
     justify-content: center;
     gap: 10px;
+}
+
+.presentacion__enlaces__link:hover{
+    background-color: #272727;
+    padding: 3%;
+    
+}
+
+.footer {
+    background-color: #22D4FD;
+    padding: 24px;
+    text-align: center;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
 }
 
