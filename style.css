@@ -1,6 +1,16 @@
  /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --color-primario: black;
+    --color-secundario: white; 
+    --color-terciario: #22D4FD; 
+    --color-hover: #272727;
+
+    --fuente-montserrat: "Montserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+
 
 * {
     padding: 0;
@@ -8,8 +18,8 @@
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
     /* height: 100vh;  el body ocupa el 100% de la pagina, se ve en el inspect element */
     box-sizing: border-box;
 }
@@ -24,10 +34,10 @@ body {
 }
 
 .header__menu__link{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-montserrat);
     font-size: 24px;
     font-weight: 400;
-    color: #22D4FD;
+    color: var(--color-terciario);
     text-decoration: none;
 
 }
@@ -48,16 +58,17 @@ body {
 
 .presentacion__contenido__titulo {
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fuente-krona);
 }
 
 .titulo-destacado{
-    color: #22D4FD;
+    color: var(--color-terciario);
 }
 
 .presentacion__contenido__texto {
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-montserrat);
+    
 }
 
 .presentacion__enlaces {
@@ -69,7 +80,7 @@ body {
 }
 
 .presentacion__enlaces__subtitulo{
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fuente-krona);
     font-size: 24px;
     font-weight: 400;
 
@@ -82,30 +93,44 @@ body {
     text-align: center;
     padding: 21.5px 0;
     border-radius: 8px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-montserrat);
     font-size: 24px;
     font-weight: 600;
     text-decoration: none;
-    color: #F6F6F6;
-    border: 2px solid #22D4FD;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
     display: flex;  /* organiza el texto junto con los iconos */
     justify-content: center;
     gap: 10px;
 }
 
 .presentacion__enlaces__link:hover{
-    background-color: #272727;
+    background-color: var(--color-hover);
     padding: 3%;
     
 }
 
 .footer {
-    background-color: #22D4FD;
+    background-color: var(--color-terciario);
     padding: 24px;
     text-align: center;
-    color: black;
-    font-family: "Montserrat", sans-serif;
+    color: var(--color-primario);
+    font-family: var(--fuente-montserrat);
     font-size: 24px;
     font-weight: 400;
 }
 
+.presentacion__contenido__texto a{
+    text-decoration: none;
+    color: var(--color-terciario);
+}
+
+/* 
+
+usar "a" arriba si no se quiere crear una nueva clase en cv.html
+.presentacion__contenido__texto__link {
+    text-decoration: none;
+    color: #22D4FD;
+}
+
+*/
