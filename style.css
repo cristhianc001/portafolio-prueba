@@ -152,5 +152,10 @@ usar "a" arriba si no se quiere crear una nueva clase en cv.html
 
     .presentacion{
         flex-direction: column-reverse; /* comportamiento de la imagen cuando disminuye la pantalla */
+        padding: 5%;
+    }
+
+    .presentacion__contenido{
+        width: auto;
     }
 }
